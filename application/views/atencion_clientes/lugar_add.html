@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta name="metro4:init" content="false">
+    <meta name="metro4:locale" content="es-MX">
+    <link rel="stylesheet" href="../../../node_modules/metro4/build/css/metro-all.min.css">
+    
+    <!--<link href="../../plugins/photon/css/photon.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../../../node_modules/xel/themes/vanilla.css">
+    <link rel="stylesheet" href="../../plugins/system/css/style.css">    
+    <script src="../../../node_modules/xel/xel.min.js"></script>    
+    <script src="../../../node_modules/metro4/build/js/metro.min.js"></script>
+    <title>Lugar / nuevo</title>
+  </head>
+  <body style="--accent-color-h:147; --accent-color-s:50%; --accent-color-l:47%;" >
+    
+    <div class="window-photon no-border">
+      <header class="toolbar-header">
+        <h1 class="title">Lugar / Nuevo</h1>        
+      </header>
+
+      <div class="window-content">
+        <div class="pane-group">
+          
+          <div class="pane p-3">
+            
+            <h4 class="header">Añadir lugar</h4>           
+            <div class="for_container">            
+                
+              <form id="frm_add">
+                <div class="form-group">
+                  <label>Nombre del lugar</label>
+                  <input id="lugar" type="text">
+                </div>
+                <div class="form-group">
+                  <div class="grid">
+                    <div class="row">
+                      <div class="cell-4">
+                        <label>Seleccione la capacidad</label>
+                      </div>  
+                      <div class="cell-6">
+                          <input id="capacity" data-role="slider" data-value="1" data-size="250" data-accuracy="1" data-cls-hint="bg-green custom-marker shadow-2" data-hint-always="true"  data-hint-position="right">
+                      </div>
+                    </div>
+                  </div>                     
+                </div>
+                
+
+
+
+              </form>
+                
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <footer class="toolbar-footer-new">
+        <div class="form-group">
+          <div class="d-flex flex-justify-center" id="wrapper-actions">
+            <button class="button alert margin-right" id="btn_cancelar">
+              <span class="caption">Cancelar</span>
+              <span class="mif-cross-light icon"></span>
+            </button>
+            <button class="button primary margin-right" id="btn_guardar" data-action="lugar">
+              <span class="caption">Guardar</span>
+              <span class="mif-floppy-disk icon"></span>               
+            </button>   
+          </div>  
+        </div>  
+      </footer>
+    </div>
+    
+  </body>
+</html>

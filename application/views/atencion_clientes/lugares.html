@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta name="metro4:init" content="false">
+    <meta name="metro4:locale" content="es-MX">
+    <link rel="stylesheet" href="../../../node_modules/metro4/build/css/metro-all.min.css">
+    
+    <!--<link href="../../plugins/photon/css/photon.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../../../node_modules/xel/themes/vanilla.css">
+    <link rel="stylesheet" href="../../plugins/system/css/style.css">    
+    <script src="../../../node_modules/xel/xel.min.js"></script>    
+    <script src="../../../node_modules/metro4/build/js/metro.min.js"></script>
+
+    <title></title>
+  </head>
+  <body style="--accent-color-h:147; --accent-color-s:50%; --accent-color-l:47%;" >
+    
+    <div class="window-photon no-border">
+      <header class="toolbar-header">
+        <h1 class="title">Lugares</h1>        
+      </header>
+
+      <div class="window-content">
+
+        
+
+
+        <div class="pane-group">
+          <div class="pane-sidebar">                        
+            <sidebar id="sidebar" style="margin-left: 0px;">
+              <nav id="nav">
+                <section id="fornav_container" data-toggle="atencion_clientes" data-child="lugares">                     
+                </section>
+              </nav>
+            </sidebar>
+          </div>
+          <div id="container-for-tabs" class="pane p-3">
+
+           
+            <div class="doctab" id="listado">
+              <h4 class="header">Lugares</h4>
+
+              <div class="row">
+                <div class="cell-md-6" id="wrapper-search">
+                </div>
+                <div class="cell-md-6" id="wrapper-rows"></div>              
+              </div>  
+              <div class="row text-center">
+                <div class="cell-md-6 text-center" id="wrapper-info"></div>
+                <div class="cell-md-12 text-center" id="wrapper-pagination"></div>
+              </div>
+
+              <div class="d-flex flex-justify-start no-visible" id="wrapper-actions">
+
+                <button class="shortcut success margin-right" data-id="atencion_clientes" data-open="lugar_add" id="btn_add_new">
+                  <span class="caption">Nuevo</span>
+                  <span class="mif-note-add icon"></span>
+                  
+                </button>
+
+                
+
+                <button class="shortcut alert margin-right" id="table_delete_check" disabled>
+                  <span class="badge">0</span>
+                  <span class="caption">Eliminar</span>
+                  <span class="mif-bin icon"></span>
+                </button>
+                            
+              </div>  
+
+              <div class="for_container-data-items">
+                <div class="d-flex flex-justify-center">
+                  <div data-role="activity" data-type="square" data-style="color"></div>
+                </div>            
+              </div>
+            </div>
+            
+            <div class="doctab d-none" id="listado-add">
+              <h4 class="header">Agregar lugar</h4>
+              <div class="for_container">            
+                
+                <form>
+                  <div class="form-group">
+                    <label>Nombre del lugar</label>
+                    <input id="lugar" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Capacidad</label>
+                    <input id="capacity" data-role="slider" data-min="1" data-max="100" data-hint-position="top">
+                  </div>
+  
+  
+  
+                </form>
+                  
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>  
+      
+      <footer class="toolbar-footer">
+        <h1 class="title">ADoctor derechos reservados 2020</h1>
+      </footer>
+    </div>
+
+
+
+
+   
+    
+  </body>
+</html>

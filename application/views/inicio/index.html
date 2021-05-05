@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <link href="../../plugins/photon/css/photon.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../node_modules/xel/themes/material.css">
+    <link rel="stylesheet" href="../../plugins/system/css/style.css">
+    
+    <script src="../../../node_modules/xel/xel.min.js"></script>
+   
+
+    <title>ADoctor</title>
+  </head>
+  <body style="--accent-color-h:88; --accent-color-s:35%; --accent-color-l:46%;">
+    <div class="title-bar-login-top"></div>
+    <div class="title-bar-login-left"></div>
+    <div class="title-bar-login-right"></div>
+    <div class="title-bar-login-bottom"></div>
+    <div class="window">
+     
+      <div class="window-content bgsystem">
+
+        <div class="pane-group">
+            
+          <div class="pane f-align-center"> 
+            
+            <div id="conexion-msg" class="conectando d-none">
+              
+            </div>
+
+            <div id="loading-box">
+              <x-throbber></x-throbber>
+            </div>
+            <div class="login-box d-none">  
+              <img class="logo_cliente" src="../../assets/logo/logo.svg">             
+              
+              <div id="login" class="login_system padded-more">
+                  <x-label bottom="true">Login</x-label>
+                  <x-input id="usr">
+                    <x-icon name="person"></x-icon>
+                    <x-label>Usuario</x-label>
+                  </x-input>
+                  <x-input type="password" id="pass">
+                    <x-icon name="vpn-key"></x-icon>
+                    <x-label>Password</x-label>
+                  </x-input>
+
+                  
+                  
+                  <div class="smit-container">
+                    
+                    <x-buttons tracking='-1' class="log-buttons">
+                      <x-button skin="flat" id="cancel">
+                        <x-box>                        
+                          <x-label>Cancelar</x-label>
+                          <x-icon name="close"></x-icon>
+                        </x-box>                        
+                      </x-button>
+
+                      <x-button skin="flat" id="smit">
+                        <x-box>                        
+                          <x-label>Aceptar</x-label>
+                          <x-icon name="done"></x-icon>
+                        </x-box>
+                      </x-button>
+
+
+                    </x-buttons>
+                  </div>
+                  <div id="message-login">
+                
+                  </div>  
+
+                  
+
+
+              </div>
+              
+            </div>
+          </div>         
+          
+        </div>
+        
+      </div>
+     
+      
+      
+    </div>
+
+
+
+
+   
+    <script>
+      // You can also require other files to run in this process
+      
+    </script>
+  </body>
+</html>
